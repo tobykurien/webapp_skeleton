@@ -1,0 +1,31 @@
+{
+  "version": "1",
+  "name": "Web app",
+  "launch_path": "/index.html",
+  "description": "Skeleton web app",
+  "icons": {
+    "512": "/images/icon128x128.png"
+  },
+  "developer": {
+    "name": "Toby Kurien",
+    "url": "http://tobykurien.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    },
+    "alarms": {
+      "description": "To periodically check for data"
+    }
+  },
+  "locales": {
+   "en": {
+      "name": "Web app",
+      "description": "Skeleton web app"
+    }
+  }
+}
