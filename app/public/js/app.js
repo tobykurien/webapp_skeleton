@@ -20,8 +20,10 @@ if (history.state && history.state.router) {
 		}
 
 		// configure nunjucks
-		nunjucks.configure('./', { autoescape: true });
-
+		nunjucks.configure('/templates', { autoescape: true });
+		// Load templates from /views
+		var env = new nunjucks.Environment(new nunjucks.WebLoader('/templates'))
+		
 		// Load appropriate template and render into the document
 		$.get(route, '', function(template) {
 			var html = nunjucks.renderString(template, {
